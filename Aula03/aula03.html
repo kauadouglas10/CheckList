@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Página sobre super-heróis usando HTML5 semântico. Trabalho de Kauã Douglas Pereira Moura.">
+<meta name="author" content="Kauã Douglas Pereira Moura">
+
+<title>Super-Heróis | Kauã Douglas Pereira Moura</title>
+
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #111;
+    color: #ffffff;
+}
+
+header, main, footer, aside {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: #00c3ff;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid yellow; 
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    background: #00c3ff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Universo dos Super-Heróis</h1>
+
+<p>
+Trabalho de HTML5 desenvolvido por
+<strong>Kauã Douglas Pereira Mouraa</strong>
+</p>
+
+<nav aria-label="Menu principal">
+<ul>
+<li><a href="#marvel">Marvel</a></li>
+<li><a href="#dc">DC Comics</a></li>
+<li><a href="#curiosidades">Curiosidades</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+
+<section id="marvel">
+<h2>Heróis da Marvel</h2>
+
+<article>
+<h3>Homem-Aranha</h3>
+<p>
+O Homem-Aranha é o alter ego de Peter Parker,
+um jovem que ganhou poderes após ser picado por
+uma aranha radioativa.
+</p>
+
+<h4>Poderes</h4>
+<ul>
+<li>Escalar paredes</li>
+<li>Sentido aranha</li>
+<li>Agilidade sobre-humana</li>
+</ul>
+
+<p>Primeira aparição em <time datetime="1962">1962</time>.</p>
+</article>
+
+</section>
+
+
+<section id="dc">
+<h2>Heróis da DC Comics</h2>
+
+<article>
+<h3>Superman</h3>
+<p>
+Superman veio do planeta Krypton e possui
+habilidades extraordinárias como voo,
+super força e visão de calor.
+</p>
+</article>
+
+</section>
+
+
+<section aria-labelledby="midia">
+<h2 id="midia">Conteúdo Multimídia</h2>
+
+<h3>Trailer de Super-Heróis</h3>
+
+<video controls width="500" style="display:block; margin:auto;">
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<h3>Tema Musical</h3>
+
+<audio controls>
+<source src="audio.mp3" type="audio/mpeg">
+Seu navegador não suporta áudio.
+</audio>
+
+</section>
+
+
+<section id="contato">
+<h2>Formulário de Preferências</h2>
+
+<form>
+
+
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" required minlength="3">
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="heroi">Herói favorito:</label>
+<select id="heroi" name="heroi" required>
+<option value="">Selecione</option>
+<option>Homem-Aranha</option>
+<option>Batman</option>
+<option>Superman</option>
+<option>Homem de Ferro</option>
+</select>
+
+<label for="mensagem">Por que gosta desse herói?</label>
+<textarea id="mensagem" name="mensagem" required></textarea>
+
+<label>
+<input type="checkbox" required>
+Aceito os termos
+</label>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</section>
+
+
+<aside id="curiosidades">
+
+<h2>Curiosidades</h2>
+
+<details>
+<summary>Qual a diferença entre Marvel e DC?</summary>
+<p>
+A principal diferença entre Marvel e DC é que a Marvel foca em humanizar heróis com dilemas pessoais e ambientação realista (espelhos), enquanto a DC cria ídolos mitológicos com tom mais épico e fantástico. A Marvel situa heróis em Nova York, já a DC usa cidades fictícias como Gotham.
+</p>
+</details>
+
+</aside>
+
+</main>
+
+<footer>
+
+<p>Trabalho acadêmico de HTML5</p>
+<p>Autor: Kauã Douglas Pereira Moura</p>
+<p>Publicado em <time datetime="2026">2026</time></p>
+
+</footer>
+
+</body>
+</html>
